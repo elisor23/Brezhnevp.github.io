@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="files/style.css">
+	<!--[if IE 7]> <link rel="stylesheet" href="files/iestyle.css"> <![endif]-->
+	<script src = "files/script.js"></script>
+</head>
+<body onload="SetWidth()" onresize = "SetWidth()">
+	<form id = "codeForm">
+		<input type="text" id = "codeText">
+		<input type="button" value ="Send code" id = "codeButton" onclick = "SendCode()"><br>
+		<span id = "example">Example: 72A22EF8-8766-4359-3978-EBBAC445687A</span>
+		<div class="clear"></div>
+		<p id = "alertText"></p>
+	</form>
+</body>
+</html>
