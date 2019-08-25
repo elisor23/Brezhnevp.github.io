@@ -5,33 +5,6 @@
 body,html{
 	min-width: 1320px;
 }
-@font-face {
-font-family: 'Myriad Pro Regular';
-src: url('fonts/MyriadPro-Regular.eot');
-src: url('fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
-url('fonts/MyriadPro-Regular.woff') format('woff'),
-url('fonts/MyriadPro-Regular.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: 'Myriad Pro Semibold';
-src: url('fonts/MyriadPro-Semibold.eot');
-src: url('fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
-url('fonts/MyriadPro-Semibold.woff') format('woff'),
-url('fonts/MyriadPro-Semibold.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-@font-face {
-font-family: 'Myriad Pro Bold';
-src: url('fonts/MyriadPro-Bold.eot');
-src: url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
-url('fonts/MyriadPro-Bold.woff') format('woff'),
-url('fonts/MyriadPro-Bold.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
 .content{
 	width: 100%;
 }
@@ -139,7 +112,7 @@ font-style: normal;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
-.traffic__advantages:before{
+.traffic__advantages:before{  /*Линии по бокам*/
 	content:"";
 	position: absolute;
 	width: 6px;
@@ -148,7 +121,7 @@ font-style: normal;
 	left: -55px;
 	bottom: 0;
 }
-.traffic__advantages:after{
+.traffic__advantages:after{  /*Линии по бокам*/
 	content:"";
 	position: absolute;
 	width: 6px;
@@ -191,7 +164,7 @@ font-style: normal;
 .traffic__button:hover{
 	background-color: #ca0205;
 }
-.traffic__button:active{
+.traffic__button:active{			/*Анимация "проваливания"*/
 	background-color: #ca0205;
 	padding-top: 4px;
 	box-shadow:0 1px 2px #fff, inset 0 1px 5px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
@@ -295,7 +268,7 @@ font-style: normal;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
 	-ms-flex-align: center;
-	align-items: center
+	align-items: center;
 }
 .footer_socials-link{
 	cursor: pointer;
@@ -305,4 +278,35 @@ font-style: normal;
 }
 .clear{
 	clear: left;
+}
+
+
+/*ШРИФТЫ*/
+
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url('fonts/MyriadPro-Regular.eot');
+src: url('fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('fonts/MyriadPro-Regular.woff') format('woff'),
+url('fonts/MyriadPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Myriad Pro Semibold';
+src: url('fonts/MyriadPro-Semibold.eot');
+src: url('fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+url('fonts/MyriadPro-Semibold.woff') format('woff'),
+url('fonts/MyriadPro-Semibold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Myriad Pro Bold';
+src: url('fonts/MyriadPro-Bold.eot');
+src: url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+url('fonts/MyriadPro-Bold.woff') format('woff'),
+url('fonts/MyriadPro-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
 }
