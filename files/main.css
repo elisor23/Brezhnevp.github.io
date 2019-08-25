@@ -1,0 +1,308 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	width: 100%;
+}
+@font-face {
+font-family: 'Myriad Pro Regular';
+src: url('fonts/MyriadPro-Regular.eot');
+src: url('fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+url('fonts/MyriadPro-Regular.woff') format('woff'),
+url('fonts/MyriadPro-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Myriad Pro Semibold';
+src: url('fonts/MyriadPro-Semibold.eot');
+src: url('fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+url('fonts/MyriadPro-Semibold.woff') format('woff'),
+url('fonts/MyriadPro-Semibold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Myriad Pro Bold';
+src: url('fonts/MyriadPro-Bold.eot');
+src: url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+url('fonts/MyriadPro-Bold.woff') format('woff'),
+url('fonts/MyriadPro-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+.content{
+	width: 100%;
+}
+.partners{
+	height: 605px;
+	width: 100%;
+	background-color: white;
+	padding-top: 58px;
+	box-sizing: border-box;
+}
+.wrapper{
+	width: 1170px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.partners__bg{
+	width: 1099px;
+	height: 231px;
+	background-image: url("images/BG_pattern.png");
+	margin-left: 70px;
+	padding-top: 125px;
+	box-sizing: border-box;
+}
+.main-h{
+	font-family: 'Myriad Pro Bold';
+	font-size: 50px;
+	color: #045c8d;
+	text-align: center;
+}
+.main-h_moved{
+	margin-left: -84px;
+}
+.partners__slider{
+	height: 200px;
+	width: 950px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 40px;
+	box-sizing: border-box;
+}
+.partners__slide-item{
+	transition: 0.5s;
+	margin: 15px 20px;
+	width: 202px;
+	-webkit-filter: grayscale(100%);
+  	-moz-filter: grayscale(100%);
+  	-ms-filter: grayscale(100%);
+  	-o-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	filter: gray;
+  	display: none;
+}
+.slick-slide{
+	display: inline;
+}
+.slick-center{
+	width: 306px;
+	transition: 1s;
+	margin-top: -7px;
+	-webkit-filter: none;
+	-moz-filter: none;
+	-ms-filter: none;
+	-o-filter: none;
+	filter: none;
+}
+.partners__slide-item[aria-hidden="true"]{
+	opacity: 0;
+}
+.traffic{
+	width: 1320px;
+	height: 719px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-color: #e7e9ea;
+	padding-top: 87px;
+	box-sizing: border-box;
+}
+.traffic__text{
+	font-family: "Myriad Pro Regular";
+	font-size: 24px;
+	color: black;
+	margin-top: 29px;
+	text-align: center;
+}
+.traffic__advantages{
+	height: 152px;
+	width: 1030px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 50px;
+	position: relative;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+.traffic__advantages:before{
+	content:"";
+	position: absolute;
+	width: 6px;
+	height: 125px;
+	background-color: #00bfd2;
+	left: -55px;
+	bottom: 0;
+}
+.traffic__advantages:after{
+	content:"";
+	position: absolute;
+	width: 6px;
+	height: 125px;
+	background-color: #00bfd2;
+	right: -50px;
+	bottom: 0;
+}
+.traffic-item{
+	width: 180px;
+	text-align: center;
+}
+.traffic-item__icon_raised{
+	margin-top: -5px;
+	margin-bottom: 5px;
+}
+.traffic-item__h{
+	font-family: "Myriad Pro Bold";
+	font-size: 20px;
+	color: #142831;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+.traffic__button{
+	width: 300px;
+	height: 55px;
+	border: none;
+	outline: none;
+	background-color: #fa272a;
+	display: block;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: white;
+	font-size: 24px;
+	font-family: "Myriad Pro Semibold";
+	cursor: pointer;
+	margin-top: 58px;
+}
+.traffic__button:hover{
+	background-color: #ca0205;
+}
+.traffic__button:active{
+	background-color: #ca0205;
+	padding-top: 4px;
+	box-shadow:0 1px 2px #fff, inset 0 1px 5px rgba(0,0,0,.8), inset 0 -1px 0 rgba(0,0,0,.05);
+}
+.footer{
+	height: 543px;
+	width: 100%;
+	background-color: #142e3a;
+	box-sizing: border-box;
+	padding-top: 115px;
+}
+.footer__contacts{
+	width: 1000px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+.footer-contacts-item{
+	width: 166px;
+	text-align: center;
+}
+.footer-contacts-item_dropped{
+	margin-top: 5px;
+}
+.footer-contacts-item__text{
+	font-family: "Myriad Pro Semibold";
+	font-size: 18px;
+	color: #01b7ce;
+	margin-top: 12px;
+}
+.footer-contacts-item__text_dropped{
+	margin-top: 20px;
+}
+.footer__company{
+	width: 195px;
+	height: 50px;
+	margin-top: 93px;
+	margin-left: 20px;
+	float: left;
+}
+.footer__logo{
+	width: 174px;
+	margin-bottom: 23px;
+}
+.footer__copyright{
+	font-family: "Myriad Pro Semibold";
+	font-size: 14px;
+	color: #456073;
+}
+.footer__site-link{
+	text-decoration: none;
+	position: relative;
+	top: 10px;
+}
+.footer__info{
+	width: 405px;
+	height: 50px;
+	float: left;
+	margin-left: 192px;
+	margin-top: 93px;
+}
+.footer__name{
+	font-family: "Myriad Pro Semibold";
+	font-size: 20px;
+	color: white;
+	letter-spacing: 2px;
+}	
+.footer__address{
+	position: relative;
+	top: 18px;
+	line-height: 30px;
+}
+.footer__socials{
+	float: left;
+	width: 165px;
+	margin-left: 175px;
+	margin-top: 143px;
+	display: -webkit-flex;
+	display: -webkit-box;
+	display: -moz-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+.footer_socials-link{
+	cursor: pointer;
+}
+.footer_socials-icon_rised{
+	margin-top: -3px;
+}
+.clear{
+	clear: left;
+}
